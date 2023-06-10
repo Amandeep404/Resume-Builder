@@ -1,6 +1,17 @@
 function redirectToBuildResume() {
   window.location.href = "build-resume_page.html";
 }
+
+/* NIGHT MODE AND LIGHT MODE */
+const modeSwitch = document.getElementById("mode-switch");
+
+// Set the initial mode based on the default value of the checkbox
+document.body.classList.toggle("light-mode", !modeSwitch.checked);
+
+modeSwitch.addEventListener("change", function () {
+  document.body.classList.toggle("light-mode");
+});
+
 /*                   FAQ SECTION CODE STARTS HERE  */
 let answers = document.querySelectorAll(".accordion");
 

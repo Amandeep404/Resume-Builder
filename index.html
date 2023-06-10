@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles\styles.css">
 </head>
 
 <body>
@@ -13,12 +13,16 @@
         <nav>
             <div class="navbar-left">
                 <a href="#" class="logo">Resume Builder</a>
+
             </div>
             <div class="navbar-right">
-                <a href="#" class="nav-link">Build Resume</a>
+                <div id="mode-switch-container">
+                    <input type="checkbox" id="mode-switch" />
+                    <label for="mode-switch"></label>
+                </div>
+                <a href="build-resume_page.html" class="nav-link">Build Resume</a>
                 <a href="#" class="nav-link">Resume Analyzer</a>
-                <a href="#" class="nav-link">Blogs</a>
-                <a href="#" class="nav-link">FAQs</a>
+                <a href=#fourth_page class="nav-link">FAQs</a>
             </div>
         </nav>
         <div class="main-screen">
@@ -32,7 +36,7 @@
                     <button onclick="redirectToBuildResume()" class="build-button">Build Resume</button>
                 </div>
                 <div class="image-container">
-                    <img src="main_screeen_analytics_icon.png" alt="3D Image">
+                    <img src="assets\main_screeen_analytics_icon.png" alt="3D Image">
                 </div>
             </div>
         </div>
@@ -44,21 +48,22 @@
         <div class="main-box">
             <div class="boxs">
                 <span>Customize with templates and themes.</span>
-                <img class="img-3d" src="person_with_puzzle_and_phone_in_chair.png" alt="template" height="64px" />
+                <img class="img-3d" src="assets\person_with_puzzle_and_phone_in_chair.png" alt="template"
+                    height="64px" />
             </div>
             <div class="boxs">
                 <span> Simple interface that helps you build quickly!</span>
-                <img class="img-3d" src="rocket_3d.png" alt="rocket" height="64px" />
+                <img class="img-3d" src="assets\rocket_3d.png" alt="rocket" height="64px" />
             </div>
         </div>
         <div class="main-box">
             <div class="boxs">
                 <span>No sign up needed - go straight to building!</span>
-                <img class="img-3d" width="54" height="60" src="data_security_3d.png" alt="sparkling" />
+                <img class="img-3d" width="54" height="60" src="assets\data_security_3d.png" alt="sparkling" />
             </div>
             <div class="boxs">
                 <span>Your data never leaves your device</span>
-                <img class="img-3d" height="54" src="templates_3d.png" alt="security-checked" />
+                <img class="img-3d" height="54" src="assets\templates_3d.png" alt="security-checked" />
             </div>
         </div>
 
@@ -66,7 +71,7 @@
 
         <div class="features">
             <div class="features-box">
-                <img src="man_excited_winning.png" alt="trophy" />
+                <img src="assets\man_excited_winning.png" alt="trophy" />
                 <span>Craft a Winning Resume that Lands Interviews</span>
                 <p> Our powerful resume builder helps you create a standout resume that grabs the attention of employers
                     and increases your chances of securing interviews. Get noticed and land your dream job with
@@ -74,7 +79,7 @@
             </div>
 
             <div class="features-box">
-                <img src="five_star_verification.png" alt="verified-badge" />
+                <img src="assets\five_star_verification.png" alt="verified-badge" />
                 <span>Elevate Your Resume with highest rated CV Maker</span>
                 <p>Harness the power of our recruiter-approved CV maker to create a standout resume that leaves a
                     lasting impression. Our cutting-edge tool is designed to help you craft a professional CV that meets
@@ -82,7 +87,7 @@
             </div>
 
             <div class="features-box">
-                <img src="man_relaxing.png" alt="easy" />
+                <img src="assets\man_relaxing.png" alt="easy" />
                 <span>Effortless Resume Writing for Professional Success</span>
                 <p>Take the hassle out of resume writing with our user-friendly platform. Seamlessly create a polished
                     resume that showcases your skills, qualifications, and achievements. Streamline your job application
@@ -108,13 +113,13 @@
             <button>Resume Examples</button>
         </section>
         <section class="right-section">
-            <img src="resume_templates.png" alt="templetes">
+            <img src="assets\resume_templates.png" alt="templetes">
         </section>
     </section>
 
     <div class="vertical-space"></div>
 
-    <section class="fourth_page">
+    <section class="fourth_page" id="fourth_page">
         <h1>
             Frequently Asked Questions(FAQs)
         </h1>
@@ -204,7 +209,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts\script.js"></script>
 </body>
 
 </html>
