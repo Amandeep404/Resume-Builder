@@ -1,17 +1,3 @@
-function redirectToBuildResume() {
-  window.location.href = "build-resume_page.html";
-}
-
-/* NIGHT MODE AND LIGHT MODE */
-const modeSwitch = document.getElementById("mode-switch");
-
-// Set the initial mode based on the default value of the checkbox
-document.body.classList.toggle("light-mode", !modeSwitch.checked);
-
-modeSwitch.addEventListener("change", function () {
-  document.body.classList.toggle("light-mode");
-});
-
 /*                   FAQ SECTION CODE STARTS HERE  */
 let answers = document.querySelectorAll(".accordion");
 
@@ -33,3 +19,20 @@ answers.forEach((event) => {
 });
 
 /*                   FAQ SECTION CODE ENDS HERE  */
+
+
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function () {
+  this.classList.toggle('bi-moon');
+  if (this.classList.toggle('bi-brightness-high-fill')) {
+    body.style.background = 'whitesmoke';
+    body.style.color = 'black';
+    body.style.transition = '2s';
+  } else {
+    body.style.background = '#1d1d1d';
+    body.style.color = 'white';
+    body.style.transition = '2s';
+  }
+});
