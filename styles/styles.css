@@ -224,6 +224,10 @@ nav {
 .second-page {
   background-color: var(--background-color);
   padding-top: 69px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Standard */
 }
 .main-box {
   display: flex;
@@ -310,6 +314,10 @@ nav {
   background-color: #1d1d1d;
   color: #fff;
   height: 100vh;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Standard */
 }
 .left-section {
   flex-direction: column;
