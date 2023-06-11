@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Build Resume</title>
+    <link rel="stylesheet" type="text/css" href="styles\build-resume_page_styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar-left">
+            <a href="#" class="logo">Resume Builder</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="nav-link">Resume Analyzer</a>
+            <a href="#" class="nav-link">Blogs</a>
+            <a href="#" class="nav-link">FAQs</a>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="left-side">
+            <!-- Input Fields for Resume Details -->
+            <div class="input-fields">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="position">Desired role:</label>
+                <input type="text" id="position" name="position">
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education">
+
+                <div class="form-row">
+                    <label for="graduation-year">Graduation Year:</label>
+                    <select id="graduation-year" name="graduation-year">
+                        <option value="Selct Year" disabled selected>Select Year</option>
+                        <option value="2022">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2022</option>
+                        <option value="2020">2023</option>
+                        <option value="2020">2024</option>
+                        <option value="2020">2025</option>
+                        <!-- Add more options for different years -->
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="age" name="age" placeholder="Enter Age" min="1" max="100">
+                    </div>
+                </div>
+
+                <label for="phone">Number:</label>
+                <input type="phone" id="phone" name="Contact">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+
+
+                <label for="technologies">Skills:</label>
+                <input type="text" id="technologies" name="technologies">
+
+                <label for="github">GitHub Url:</label>
+                <input type="url" id="github" name="github">
+
+                <!-- Add more input fields as needed -->
+
+            </div>
+
+            <div class="sub-container">
+                <div class="sub-left">
+                    <h3 id="Internships-title">Internships:</h3>
+                    <div class="internship-boxes">
+                        <div class="first-row">
+                            <input type="text" id="internship-company" name="Company" placeholder="Company Name">
+                            <input type="text" id="internship-role" name="role" placeholder="position">
+                        </div>
+                        <input type="text" id="internship-time" name="time" placeholder="Duration">
+                    </div>
+
+                </div>
+                <div class="sub-right">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="position">Desired role:</label>
+                    <input type="text" id="position" name="position">
+
+                    <label for="education">Education:</label>
+                    <input type="text" id="education" name="education">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <!-- Searching Animation -->
+            <div class="animation">
+                <!-- Add your searching animation here -->
+            </div>
+
+            <!-- Resume Hints -->
+            <div class="hints">
+                <h2>Resume Building Tips</h2>
+                <p>Include relevant work experience and highlight your achievements.</p>
+                <p>Showcase your skills and technical expertise.</p>
+                <p>Tailor your resume to match the job description.</p>
+                <p>Use clear and concise language.</p>
+                <p>Proofread for any grammatical or spelling errors.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="build-resume_page_script.js"></script>
+</body>
+
+</html>
