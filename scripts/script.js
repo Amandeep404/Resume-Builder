@@ -39,3 +39,8 @@ toggle.addEventListener("click", function () {
     body.style.transition = "2s";
   }
 });
+
+function toggleMode() {
+  const body = document.querySelector("body");
+  body.classList.toggle("dark-mode");
+}

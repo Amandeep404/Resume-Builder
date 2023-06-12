@@ -62,50 +62,6 @@ nav {
   text-decoration: none;
 }
 
-/* #mode-switch-container {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background-color: #ccc;
-  Switch background color
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#mode-switch-container input[type="checkbox"] {
-  display: none;
-}
-
-#mode-switch-container label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #000;
-  Switch handle color
-  border-radius: 50%;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s;
-}
-
-#mode-switch-container input[type="checkbox"]:checked+label {
-  transform: translateX(100%);
-  background-color: #fff;
-  Switch handle color in dark mode
-} */
-
-/* #toggleDark {
-  color: yellow;
-  font-size: 20px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding-right: 40px;
-  transform: translate(-50%, -50%);
-} */
-
 .navbar-right {
   display: flex;
 }
