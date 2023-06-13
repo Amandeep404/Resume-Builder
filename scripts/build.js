@@ -1,16 +1,8 @@
-const API_KEY = "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";
+const API_KEY = "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";
+
+let loadingTextInterval;
 
 const generateResumeButton = document.getElementById("generateResumeButton");
-
-// Add a CSS class to show the spinning animation
-function showLoadingAnimation() {
-  generateResumeIcon.classList.add("fa-spin");
-}
-
-// Remove the CSS class to stop the spinning animation
-function hideLoadingAnimation() {
-  generateResumeIcon.classList.remove("fa-spin");
-}
 
 function addNewExp() {
   // Get the work experience container
@@ -174,8 +166,36 @@ async function getMessage() {
     window.location.href = `resume_preview.html?resume=${encodedResume}`;
   } catch (error) {
     console.log(error);
+    hideLoadingAnimation();
   } finally {
     // Hide the loading animation
     hideLoadingAnimation();
   }
+}
+
+// loading animation
+// Show the loading animation
+function showLoadingAnimation() {
+  let counter = 0;
+  const loadingTextOptions = [
+    "Working on your Resume...",
+    "Generating Ideas...",
+    "Formatting Content...",
+  ];
+
+  loadingTextInterval = setInterval(() => {
+    const loadingText = loadingTextOptions[counter];
+    generateResumeButton.innerHTML = loadingText;
+    counter = (counter + 1) % loadingTextOptions.length;
+  }, 7000);
+
+  generateResumeButton.disabled = true;
+  generateResumeButton.classList.add("spinning");
+}
+
+// Hide the loading animation
+function hideLoadingAnimation() {
+  generateResumeButton.classList.remove("spinning");
+  generateResumeButton.innerHTML = "Generate Resume";
+  generateResumeButton.disabled = false;
 }
