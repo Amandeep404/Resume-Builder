@@ -49,6 +49,11 @@
               <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age" min="1" max="100">
             </div>
             <div class="form-group mt-3">
+              <label for="name">College/University </label>
+              <input type="text" id="education_details" class="form-control"
+                placeholder="Enter College/University name" />
+            </div>
+            <div class="form-group mt-3">
               <label for="name"> Personal Website Link</label>
               <input type="text" id="websitefield" class="form-control" placeholder="Enter your Website link" />
             </div>
@@ -63,10 +68,6 @@
               <input type="text" id="linkedinfield" class="form-control"
                 placeholder="Enter your Linkedin Profile link" />
             </div>
-            <div class="form-group mt-3">
-              <label for="name"> Twitter Link</label>
-              <input type="text" id="twitterfield" class="form-control" placeholder="Enter your Twitter link" />
-            </div>
 
 
           </div>
@@ -74,8 +75,6 @@
           <!-- column 2 -->
           <div class="col-md-6 mt-2">
             <h3>Professional Experience</h3>
-
-
             <div class="form-group mt-2">
               <label for="skillfield">Skills / Tech stack</label>
               <input rows="2" class="form-control" placeholder="Enter your Skill set or Tech stack "
@@ -101,117 +100,19 @@
                 </button>
               </div>
             </div>
-
           </div>
         </div>
 
         <div class="container text-center my-4">
           <button id="generateResumeButton" class="btn btn-warning btn-large">
+            <i id="generateResumeIcon" class="fas fa-spinner fa-spin"></i>
             Generate Resume
           </button>
         </div>
       </div>
     </div>
 
-    <!--Resume template-->
-
-    <div class="container-fluid" id="cv-template">
-      <div class="row">
-        <div class="col-md-4 text-center py-5 left-template">
-          <!-- first section -->
-
-          <img id="my-img" src="" alt="image" class="img-fluid myimg" />
-          <div class="container">
-            <h1 id="nameT1"></h1>
-            <hr />
-            <p id="noT"></p>
-            <p id="addressT"></p>
-            <p id="emailT"></p>
-          </div>
-          <hr />
-
-          <p>
-            <a id="githubT" href="#"></a>
-          </p>
-          <p>
-            <a id="linkedinT" href="#"></a>
-          </p>
-          <p>
-            <a id="twitterT" href="#"></a>
-          </p>
-
-          <p>
-            <a id="websiteT" href="#"></a>
-          </p>
-        </div>
-
-        <div class="col-md-8 py-4">
-          <!-- second-section -->
-          <!-- <h1 id="nameT2" class="text-center" style="font-weight:980">
-            Rishika Vishnoi
-        </h1>
-       -->
-          <!-- objective  -->
-          <div class="card mt-4">
-            <div class="card-header background">
-              <h3>Objective</h3>
-            </div>
-            <div class="card-body">
-              <p id="objT"></p>
-            </div>
-          </div>
-
-          <!-- skill set -->
-          <div class="card mt-4">
-            <div class="card-header background">
-              <h3>Skills</h3>
-            </div>
-            <div class="card-body">
-              <p id="skillT"></p>
-            </div>
-          </div>
-
-          <!-- work experience -->
-
-          <div class="card mt-4">
-            <div class="card-header background">
-              <h3>Work Experience</h3>
-            </div>
-            <div class="card-body">
-              <ul id="weT">
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Education -->
-
-          <div class="card mt-4">
-            <div class="card-header background">
-              <h3>Eduacation</h3>
-            </div>
-            <div class="card-body">
-              <ul id="eduT">
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="right-side">
-      <!-- Searching Animation -->
-      <div class="animation">
-        <!-- Add your searching animation here -->
-      </div>
-
-      <!-- Resume Hints -->
-
-    </div>
+  </div>
 
   </div>
   <script src="scripts/build.js"></script>

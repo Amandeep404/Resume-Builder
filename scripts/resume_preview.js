@@ -1,12 +1,37 @@
-// Retrieve the resume text from local storage
-const resumeText = localStorage.getItem("resumeText");
+window.addEventListener("DOMContentLoaded", () => {
+  // Get the resume message from the URL query parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const resumeMessage = urlParams.get("resume");
 
-// Display the resume content in the textarea
-const resumeContent = document.getElementById("resumeContent");
-resumeContent.value = resumeText;
+  // Decode the resume message from URL
+  const decodedResume = decodeURIComponent(resumeMessage);
 
-// Function to edit the resume content
-function editResume() {
-  // Enable editing of the textarea
-  resumeContent.removeAttribute("readonly");
+  // Set the value of the text area
+  const resumeContentDiv = document.getElementById("resumeContent");
+  resumeContentDiv.innerHTML = decodedResume;
+});
+
+function saveResume() {
+  const resumeContent = document.getElementById("resumeContent");
+  const container = resumeContent.parentElement;
+  const previousHeight = container.style.height;
+  container.style.height = "auto";
+
+  // Use html2pdf library to save the content as PDF
+  html2pdf()
+    .set({
+      filename: "Resume_builder.pdf",
+      css: [
+        {
+          selector: "body",
+          styles: {
+            "background-color": "#f9f9f9", // PDF background color
+          },
+        },
+      ],
+    })
+    .from(resumeContent)
+    .save();
+  // Restore the original height of the container
+  container.style.height = previousHeight;
 }

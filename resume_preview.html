@@ -5,15 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Resume Preview</title>
-    <!-- Include necessary stylesheets and scripts -->
+    <link rel="stylesheet" href="styles/resume_preview.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>Resume Preview</h1>
+        <h1>RESUME PREVIEW</h1>
         <!-- Display the resume content from local storage -->
-        <textarea id="resumeContent" rows="10" cols="50"></textarea>
-        <button onclick="editResume()">Edit</button>
+        <div id="resumeContent"></div>
+        <button onclick="saveResume()">SAVE AS PDF</button>
     </div>
 
     <script src="scripts/resume_preview.js"></script>

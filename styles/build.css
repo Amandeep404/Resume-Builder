@@ -15,6 +15,10 @@
   background-color: rgb(55, 55, 53);
   /* display: none; */
 }
+#cv-form h2 {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
 
 #cv-template {
   display: none;
