@@ -13,20 +13,16 @@
     <p class="analysis-para">Al-powered resume analysis and feedback to help you stand out in your job search.</p>
     <div class="form-sec">
         <form action="">
-            <input type="file" id="myFileInput" class="file-uploder">
-            <button class="btn">Upload</button>
+            <input type="file" id="myFileInput" class="file-uploder" accept=".doc, .docx">
+            <button onclick="handleUpload()" class="btn">Upload</button>
         </form>
     </div>
 
     <p class="analysis-para">Review about your Resume</p>
-    <p class="analysis-subpara">This is an impressive resume. It is well-organized and clearly outlines the applicant's
-        skills, experience, and
-        education. The applicant has a strong background in data structures and algorithms, as well as experience in
-        building full-stack web applications. The applicant also has a good understanding of languages, back-end
-        development, front-end development, and soft skills. The applicant has also included a list of projects that
-        demonstrate their technical skills. Overall, this is an excellent resume.</p>
+    <p class="analysis-subpara"></p>
 
-    <script src="script.js"></script>
+
+    <script src="scripts/resume_analyzer_script.js"></script>
 </body>
 
 </html>

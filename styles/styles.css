@@ -20,6 +20,9 @@
   --navbar-color: #151414;
   --button-blue: #2177da;
   --hover-green: #49e6b2;
+  --text-green: aquamarine;
+  --text-h1: whitesmoke;
+  --text-title-color: #1ebde4;
 }
 
 body {
@@ -28,7 +31,7 @@ body {
   scrollbar-width: none;
   /* Firefox */
   transition: background-color 0.3s, color 0.3s;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
 }
 
 body::-webkit-scrollbar {
@@ -53,6 +56,7 @@ nav {
 
 .navbar-left {
   flex: 1;
+  color: #f2eded;
 }
 
 .logo {
@@ -137,6 +141,9 @@ nav {
 .navbar-right input:checked + label svg.moon {
   fill: #fff;
 }
+/* */
+
+/* */
 
 .nav-link {
   margin-left: 20px;
@@ -171,7 +178,7 @@ nav {
 
 .text-container {
   flex: 1;
-  color: #fff;
+  color: var(--text-h1);
   padding: 20px;
   text-align: left;
 }
@@ -180,7 +187,7 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
   font-size: 80px;
-  background: linear-gradient(to right, #bbd6f5, #ffffff);
+  background: rgb(210, 91, 228);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -189,7 +196,7 @@ nav {
 
 .analyze,
 .build {
-  color: aquamarine;
+  color: var(--text-title-color);
 }
 
 .subtitle {
@@ -259,7 +266,6 @@ nav {
 .create-resume-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #8e24aa;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -280,12 +286,8 @@ nav {
 /*                                         Second page start here                                */
 
 .second-page {
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   padding-top: 69px;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE/Edge */
-  user-select: none; /* Standard */
 }
 
 .main-box {
@@ -295,7 +297,7 @@ nav {
 
 .vertical-space {
   height: 120px;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
 }
 
 .boxs {
@@ -315,7 +317,7 @@ nav {
   box-shadow: 0 0 10px rgba(223, 221, 221, 0.2);
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: white;
+  color: var(--text-h1);
 }
 
 .img-3d {
@@ -368,14 +370,13 @@ nav {
 /*                  THIRD PAGE STARTS HERE             */
 
 .Third_page {
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   padding-top: 69px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 15px 90px;
-  /* background-color: #1d1d1d; */
-  color: #fff;
+  color: var(--text-h1);
   height: 100vh;
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -434,14 +435,14 @@ button:hover {
 /*                   FAQ SECTION CODE STARTS HERE  */
 
 .fourth_page {
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   padding-bottom: 60px;
 }
 
 .fourth_page h1 {
   padding: 40px;
   font-size: 60px;
-  color: whitesmoke;
+  color: var(--text-h1);
   text-align: center;
 }
 
@@ -563,4 +564,8 @@ footer {
 .btn:hover {
   background: #8dccb7;
   text-decoration: none;
+}
+.file-uploder {
+  color: #fff;
+  font-size: 14px;
 }
