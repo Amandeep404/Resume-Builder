@@ -51,3 +51,7 @@ answers.forEach((event) => {
 });
 
 /*                   FAQ SECTION CODE ENDS HERE  */
+
+function getStartedBtn() {
+  window.location.href = "build.html";
+}

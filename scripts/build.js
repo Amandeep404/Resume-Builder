@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 let loadingTextInterval;
 
@@ -99,7 +99,7 @@ async function getMessage() {
 
 <p>
   <strong>My skills are in these technologies:</strong> ${skillSet}.
-  <em>Please elaborate on my skills in these technologies.</em>
+  <em>Please elaborate on each skills I know in these technologies.</em>
 </p>
 
 <p>
@@ -126,6 +126,7 @@ async function getMessage() {
 <p>
   <em>
     Use different font sizes and styles to depict different and important details in my resume.
+    use horizontal lines to separate different sections of my resume and make and give a nice Summary of me on top.
   </em>
   <br>
   <strong>Please use the provided information to generate a professional resume for me.</strong>
