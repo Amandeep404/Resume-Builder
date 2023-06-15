@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 let loadingTextInterval;
 
