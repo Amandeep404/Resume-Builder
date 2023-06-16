@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const { API_KEY } = require("./config.js");
 
 let loadingTextInterval;
 
