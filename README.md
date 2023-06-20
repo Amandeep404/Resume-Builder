@@ -17,7 +17,6 @@ Features:
       Users can create and manage multiple resumes within their account.
       The application provides a user-friendly interface for adding and editing various sections of a resume, such as personal information, education, work             experience, skills, projects, and references.
       The application provides an interactive chat-based interface powered by OpenAI API, allowing users to input their resume details and receive suggestions and recommendations in real-time.
-     
       Form for Personal and Professional Information
       Users can fill out a comprehensive form with fields for personal details (name, contact information, etc.) and professional information (education, work      experience, skills, etc.). The form is intuitive and easy to use.
       
