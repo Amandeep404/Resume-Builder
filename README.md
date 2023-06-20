@@ -1,5 +1,7 @@
 # Resume-Builder Project
 The Resume Builder project is a web application powered by OpenAI's ChatGPT API that aims to simplify the process of creating professional resumes. This README file provides an overview of the project, its overview, features, installation instructions, and usage guidelines.
+![first-page](https://github.com/PriyaSingh03/Resume-Builder/assets/92670560/29ab2226-974f-439d-9964-e7d2f3dad668)
+
 
 # Overview
 The Resume Builder Project aims to simplify the process of creating a well-designed and professional resume. It provides users with a user-friendly interface to enter their personal and professional information, select from various templates, and generate a high-quality resume document.
