@@ -17,21 +17,15 @@ function saveResume() {
   const previousHeight = container.style.height;
   container.style.height = "auto";
 
+  var opt = {
+    margin: 0,
+    filename: "Resume_builder.pdf",
+    enableLinks: true,
+    jsPDF: { unit: "in", format: "a4", orientation: "p" },
+  };
+
   // Use html2pdf library to save the content as PDF
-  html2pdf()
-    .set({
-      filename: "Resume_builder.pdf",
-      css: [
-        {
-          selector: "body",
-          styles: {
-            "background-color": "#f9f9f9", // PDF background color
-          },
-        },
-      ],
-    })
-    .from(resumeContent)
-    .save();
+  html2pdf().set(opt).from(resumeContent).save();
   // Restore the original height of the container
-  container.style.height = previousHeight;
+  //container.style.height = previousHeight;
 }

@@ -5,13 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   /* Safari */
-  -moz-user-select: none;
+  /* -moz-user-select: none; */
   /* Firefox */
-  -ms-user-select: none;
+  /* -ms-user-select: none; */
   /* IE/Edge */
-  user-select: none;
+  /* user-select: none; */
   /* Standard */
 }
 
@@ -516,34 +516,34 @@ footer {
 /* Resume Anlayzer page style start here  */
 
 .analysis {
-  color: #49e6b2;
+  color: var(--text-title-color);
   padding: 50px 20px;
   font-weight: lighter;
 }
 
 .analysis-para {
-  color: #fff;
+  color: whitesmoke;
   font-size: x-large;
-  font-weight: 600;
-  padding: 0 20px;
-}
 
-.analysis-subpara {
-  color: #fff;
-  font-size: large;
-  padding: 15px 20px;
-  margin-right: 40px;
+  padding: 0 20px;
 }
 
 .form-sec {
   margin: 55px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-sec form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#myFileInput {
+  margin-left: 60px;
+  color: rgb(220, 218, 218);
 }
 
 .btn {
@@ -553,19 +553,30 @@ footer {
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
-  background: #49e6b2;
+  background: #025ec7;
   padding: 10px 30px 10px 30px;
   text-decoration: none;
   cursor: pointer;
   margin: 30px 0;
   border: none;
 }
-
 .btn:hover {
-  background: #8dccb7;
+  background: var(--button-blue);
   text-decoration: none;
 }
 .file-uploder {
   color: #fff;
   font-size: 14px;
+}
+.resume-content {
+  padding-left: 20px;
+}
+
+.analysis-subpara {
+  color: #e4dfdf;
+  font-size: large;
+  padding: 15px 20px;
+  margin-right: 40px;
+  width: 100%;
+  height: 40vh;
 }

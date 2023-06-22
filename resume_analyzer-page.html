@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Analyzer</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
 
 </head>
 
 <body>
-    <h1 class="analysis">Analysis</h1>
+    <h1 class="analysis">Resume Analyzer</h1>
     <p class="analysis-para">Al-powered resume analysis and feedback to help you stand out in your job search.</p>
     <div class="form-sec">
-        <form action="">
-            <input type="file" id="myFileInput" class="file-uploder" accept=".doc, .docx">
-            <button onclick="handleUpload()" class="btn">Upload</button>
-        </form>
+
+        <input type="file" id="myFileInput" class="file-uploader" accept=".pdf">
+        <button class="btn" onclick="handleUpload()">Analyze</button>
+
     </div>
 
     <p class="analysis-para">Review about your Resume</p>
-    <p class="analysis-subpara"></p>
+    <div class="analysis-subpara"></div>
 
-
+    <script src="config.js"></script>
     <script src="scripts/resume_analyzer_script.js"></script>
 </body>
 
